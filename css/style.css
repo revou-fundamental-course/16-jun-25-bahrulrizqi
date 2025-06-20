@@ -59,6 +59,6 @@ input[type=number] {
 }
 
 button {
-    background-color: lightgreen;
+    background-color: lightgreen; 
     border-radius: 9px;
 }
