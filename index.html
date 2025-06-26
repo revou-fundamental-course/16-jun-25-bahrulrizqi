@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Matematika</title>
-
+    <!-- external css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="asset\favicon.png" type="image/x-icon">
 </head>
 <body>
     <!-- buat header -->
@@ -14,7 +16,7 @@
 
         <nav>
             <a href="index.html" class="segitiga">Segitiga</a>
-            <a href="" class="persegi">Persegi</a>
+            <a href="persegi.html" class="persegi">Persegi</a>
         </nav>
         <h1>Segitiga</h1>
         <p>Segitiga adalah bangun datar yang memiliki tiga sisi dan tiga sudut. Jumlah semua sudut dalam segitiga selalu 180 derajat.
@@ -33,11 +35,13 @@
 
         <!-- segitiga -->
         <!-- Luas -->
-        <section>
+        <section id="luas">
             <header><h2>Luas Segitiga</h2></header>
         
             <!-- konten luas -->
-            <div class="formula-img img-luas" ></div>
+            <div class="posisi-gambar">
+                <div class="formula-img img-luas" ></div>
+             </div>
 
             <p>Rumus Luas Segitiga = 1/2 * a * t</p>
         
@@ -50,27 +54,31 @@
 
                 <div>
                     <label for="alas"> Alas</label>
-                    <input type="number" id="alas" placeholder="masukan alas segitiga" >
+                    <input type="number" id="alas" placeholder="masukan alas segitiga" required>
                 </div>
                 
                 <div>
                     <label for="tinggi"> Tinggi</label>
-                    <input type="number" id="tinggi" placeholder="masukan tinggi segitiga" >
+                    <input type="number" id="tinggi" placeholder="masukan tinggi segitiga" required>
                 </div>
 
                 <div>
-                    <button>Hitung</button>
+                    <button id="hitung-luas">Hitung</button>
+                    <button id="reset_luas" class="reset">Reset</button>
                 </div>
+                <div id="output-luas"></div>
 
             </form>
         </section>
 
             <!-- keliling -->
-        <section>
+        <section id="keliling">
             <header><h2>keliling Segitiga</h2></header>
             
             <!-- konten keliling -->
-            <div class="formula-img img-keliling"></div>
+            <div class="posisi-gambar">
+                <div class="formula-img img-keliling"></div>
+            </div>
             <p>Rumus keliling Segitiga = s + s + s</p>
 
          <!-- keliling segitiga -->
@@ -81,22 +89,25 @@
         
                 <div>
                     <label for="sisi1"> Sisi Ke 1</label>
-                    <input type="number" id="sisi1" placeholder="Masukan Sisi Segitiga" >
+                    <input type="number" id="sisi1" placeholder="Masukan Sisi Segitiga" required>
                 </div>
                 
                 <div>
                     <label for="sisi2"> Sisi Ke 2</label>
-                    <input type="number" id="sisi2" placeholder="Masukan Sisi Segitiga" >
+                    <input type="number" id="sisi2" placeholder="Masukan Sisi Segitiga" required>
                 </div>
         
                 <div>
                     <label for="sisi3"> Sisi Ke 3</label>
-                    <input type="number" id="sisi3" placeholder="Masukan Sisi Segitiga" >
+                    <input type="number" id="sisi3" placeholder="Masukan Sisi Segitiga" required>
                 </div>
         
                 <div>
-                    <button>Hitung</button>
+                    <button id="hitung-keliling">Hitung</button>
+                    <button id="reset_keliling" class="reset">Reset</button>
                 </div>
+
+                <div id="output-keliling"></div>
         
             </form>
         </section>
@@ -106,5 +117,7 @@
 
     <!-- footer content -->
     <footer>&copy;2025 Bahrul Rizqi</footer>
+    <!-- external script js  -->
+    <script src="js\script.js"></script>
 </body>
 </html>

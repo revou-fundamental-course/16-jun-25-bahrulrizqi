@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Matematika</title>
+    <!-- external css  -->
+    <link rel="stylesheet" href="css\style_persegi.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="asset\favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- buat header -->
+    <header>
+        <h1>Welcome To Matik</h1>
+
+        <nav>
+            <a href="index.html" class="segitiga">Segitiga</a>
+            <a href="persegi.html" class="persegi">Persegi</a>
+        </nav>
+        <h1>Persegi</h1>
+        <p>Persegi adalah bangun datar dua dimensi yang memiliki empat sisi sama panjang dan keempat sudutnya berbentuk siku-siku (90 derajat). 
+            Karena semua sisi dan sudutnya sama, persegi termasuk ke dalam kelompok bangun datar yang disebut segi empat beraturan. 
+            Persegi memiliki dua diagonal yang sama panjang dan saling berpotongan tegak lurus di titik tengah. 
+            Bangun ini sering dijumpai dalam kehidupan sehari-hari, misalnya pada papan catur, ubin lantai, atau kertas tempel berbentuk kotak.
+
+        </p>
+    </header>
+    
+    <!-- untuk main content  --> 
+    
+    <main>
+
+        <!-- persegi -->
+        <!-- Luas -->
+        <section id="luas">
+            <header><h2>Luas Persegi</h2></header>
+        
+            <!-- konten luas -->
+            <div class="posisi-gambar">
+                <div class="formula-img img-luas" ></div>
+             </div>
+
+            <p>Rumus Luas Persegi <br>
+                 Luas = s x s atau Luas = s². 
+            </p>
+        
+            <!-- form luas -->
+        
+            <form>
+                <header>
+                    <h2>Form Luas Persegi</h2>
+                </header>
+
+                <div>
+                    <label for="sisi-luas"> Sisi</label>
+                    <input type="number" id="sisi-luas" placeholder="Masukan Sisi Persegi" required>
+                </div>
+
+                <div>
+                    <button id="hitung-luas">Hitung</button>
+                    <button id="reset_luas" class="reset">Reset</button>
+                </div>
+                <div id="output-luas"></div>
+
+            </form>
+        </section>
+
+            <!-- keliling -->
+        <section id="keliling">
+            <header><h2>keliling Persegi</h2></header>
+            
+            <!-- konten keliling -->
+            <div class="posisi-gambar">
+                <div class="formula-img img-keliling"></div>
+            </div>
+            <p>Rumus keliling Persegi <br>
+                K = s + s + s + s atau K = 4 x s   
+            </p>
+
+         <!-- keliling persegi -->
+            <form>
+                <header>
+                    <h2>Form keliling Persegi</h2>
+                </header>
+        
+                <div>
+                    <label for="sisi-keliling"> Sisi</label>
+                    <input type="number" id="sisi-keliling" placeholder="Masukan Sisi Persegi" required>
+                </div>
+                <div>
+                    <button id="hitung-keliling">Hitung</button>
+                    <button id="reset_keliling" class="reset">Reset</button>
+                </div>
+
+                <div id="output-keliling"></div>
+        
+            </form>
+        </section>
+    
+
+    </main>
+
+    <!-- footer content -->
+    <footer>&copy;2025 Bahrul Rizqi</footer>
+    <!-- external script js  -->
+    <script src="js\scrip_persegi.js"></script>
+</body>
+</html>

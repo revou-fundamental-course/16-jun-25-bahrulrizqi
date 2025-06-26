@@ -1,0 +1,117 @@
+header {
+    text-align: center;
+}
+
+body {
+    
+    font-family: cursive;
+    background-color: #f0f0f0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+ nav a{
+    height: 50px;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    align-content: center;
+    border: 1px solid;
+    box-shadow: 3px 4px black;
+    
+ }
+
+ .segitiga{
+    background-color: #4eb9605e;
+    margin-bottom: 12px;
+ }
+
+ .persegi{
+    background-color:#4e90f05e;
+ }
+
+ main {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 50px;
+ }
+
+ main > section {
+    flex: 1;
+    text-align: center;
+ }
+
+ #keliling {
+    background-color: #4e90f05e;
+    border-radius: 20px;
+    padding-bottom: 10px;
+ }
+
+ #luas {
+    background-color: #4e90f05e;
+    border-radius: 20px;
+    padding-bottom: 10px;
+ }
+
+
+ .formula-img{
+    border: 1px solid;
+    width: 330px;
+    height: 250px;
+    background-position: center;
+    background-size:cover;
+    
+}
+
+.posisi-gambar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-luas {
+    background-image: url(https://www.doyanblog.com/wp-content/uploads/2023/05/rumus-luas-persegi.jpg.webp);
+
+}
+
+.img-keliling {
+    background-image: url(https://asset-2.tstatic.net/tribunnews/foto/bank/originals/rumus-keliling-persegi-2345667.jpg);
+
+}
+
+input[type=number] {
+    width: 94%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+button {
+    background-color: lightgreen; 
+    border-radius: 9px;
+}
+
+.reset{
+    background-color: rgb(252, 194, 87);
+}
+
+footer {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        color: #0000002d;
+        font-size: 15px;
+        margin: -8px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width: 480px){
+    main {
+        flex-direction: column;
+    }
+}
