@@ -17,11 +17,18 @@ hitung_luas.addEventListener ('click',function(e) {
 
      // untuk angka valid tidak boleh kosong
      if ( !a || !t ) {
-        output_luas.innerHTML = `<H3>Mohon Diisi Semua </H3>
-        <H3>Tidak Boleh Ada Yang Kosong </H3>`; 
+        output_luas.innerHTML = `<H3>Mohon Diisi  </H3>
+        <H3>Tidak Boleh Kosong </H3>`; 
         return;
-        
     }
+    
+    // Angka Tidak Boleh bernilai 0 
+    if ( a <= 0|| t <= 0 ) {
+        output_luas.innerHTML = `<H2>Mohon Diisi  </H2>
+        <H2>Angka tidak Boleh Kosong  </H2>`; 
+        return;        
+    }
+    
     let luas = 0.5*a*t;
     output_luas.innerHTML = `<H3>Hasilnya adalah =</H3>  <h1>${luas}</h1>`;
 
@@ -52,8 +59,15 @@ hitung_keliling.addEventListener ('click',function(e) {
     
     // untuk angka valid tidak boleh kosong
     if ( !s1 || !s2 ||!s3) {
-        output_keliling.innerHTML = `<H2>Mohon Diisi Semua </H2>
-        <H2>Tidak Boleh Ada Yang Kosong </H2>`; 
+        output_keliling.innerHTML = `<H2>Mohon Diisi  </H2>
+        <H2>Tidak Boleh Kosong </H2>`; 
+        return;        
+    }
+
+    // AngkaTidak Boleh bernilai 0 
+    if ( s1 <= 0|| s2 <= 0 ||s3 <= 0 ) {
+        output_keliling.innerHTML = `<H2>Mohon Diisi  </H2>
+        <H2>Angka tidak Boleh Kosong </H2>`; 
         return;        
     }
 

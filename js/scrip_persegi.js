@@ -19,6 +19,14 @@ hitung_luas.addEventListener ('click',function(e) {
         return;
         
     }
+    
+    // Angka Tidak Boleh bernilai 0 
+    if ( s <= 0 ) {
+        output_luas.innerHTML = `<H2>Mohon Diisi  </H2>
+        <H2>Angka tidak Boleh Kosong  </H2>`; 
+        return;        
+    }
+
     let luas = s*s;
     output_luas.innerHTML =`<H2>Hasilnya adalah </H2>  
     <h1> K = ${s} x ${s} <br>
@@ -50,6 +58,13 @@ hitung_keliling.addEventListener ('click',function(e) {
         Form Tidak Boleh Kosong </H3>`; 
         return;
         
+    }
+
+       // Angka Tidak Boleh bernilai 0 
+    if ( s1 <= 0 ) {
+        output_keliling.innerHTML = `<H2>Mohon Diisi  </H2>
+        <H2>Angka tidak Boleh Kosong  </H2>`; 
+        return;        
     }
     let keliling = 4*s1;
     output_keliling.innerHTML = `<H2>Hasilnya adalah </H2>  
